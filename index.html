@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Paint</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper clearfix">
+    <canvas id="canvas" ></canvas>
+    <div class="sidebar">
+      <div class="logo">
+        <h1>Simple Paint</h1>
+        <h5>Powered by Java Script</h5>
+    </div>
+    </div>
+    <!-- Color menius begining -->
+    <div class="footer">
+    <div class="color_meniu clearfix">
+      <!-- Showing current and active color -->
+      <div class="layer_wrap">
+        <div class="background" title="Select Background">
+          <div class="shadow_color" title="Select Shadow">
+            <div class="current_color active_box" title="Drawing Color">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HEX color entry -->
+      <div class="hex_wrap">
+        <label>HEX: #</label>
+        <input type="text" id="hex_input" placeholder="000000" maxlength="6" size="1">
+      </div>
+      <!-- Color selection -->
+      <div class="color_palet_wrap ">
+        <div class="red color_box" id="red">
+        </div>
+        <div class="blue color_box" id="blue">
+        </div>
+        <div class="green color_box" id="green">
+        </div>
+        <div class="yellow color_box" id="yellow">
+        </div>
+        <div class="olive color_box" id="olive">
+        </div>
+        <div class="orange color_box" id="orange">
+        </div>
+        <div class="purple color_box" id="purple">
+        </div>
+        <div class="lime color_box" id="lime">
+        </div>
+        <div class="black color_box" id="black">
+        </div>
+        <div class="grey color_box" id="grey">
+        </div>
+        <div class="white color_box" id="white">
+        </div>
+        <button type="button" class="hex color_box" id="hex" >HEX</button>
+      </div> <!--End of color selection-->
+    </div><!--End of color meniu-->
+  </div>
+  </div>
+
+  <script src="functions.js"></script>
+  </body>
+</html>

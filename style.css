@@ -1,0 +1,208 @@
+* {margin:0; padding: 0;box-sizing: border-box;}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.wrapper {
+  background: linear-gradient(to top left, #006600 0%, #ffff99 100%);
+  min-width: 1067px;
+}
+
+/* Sidebar */
+
+.sidebar {
+  width: 28%;
+  height: 70vh;
+  float:left;
+}
+.logo h1 {
+  text-align: center;
+}
+
+.logo h5 {
+  text-align: right;
+  margin-right: 14px;
+  margin-top: -8px;
+}
+
+.logo {
+  border-bottom: #3e4444 4px solid;
+  padding: 3px;
+  margin-right: 5px;
+}
+
+/* Canvas styling */
+#canvas {
+  border: #97c15b 4px solid;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0px;
+  background-color: white;
+  display: block;
+  float: left;
+  }
+
+#canvas:hover {cursor:crosshair;}
+
+/* -------------------------------- */
+/* ----Begining of Color meniu------*/
+/* -------------------------------- */
+
+.footer {
+  width: 100%;
+  height: 21vh;
+  clear: both;
+}
+
+.color_meniu {
+  width: 70.6%;
+  padding: 1px;
+  margin-left: 2px;
+}
+
+/* Current and active color */
+
+
+.background {
+  float: left;
+  width: 186px;
+  height: 138px;
+  border: #82b44e 2px solid;
+  border-radius: 6px;
+  margin: 5px;
+  margin-left: 0;
+  margin-right: 2px;
+  background-color: white;
+}
+
+.shadow_color {
+  width: 110px;
+  height: 90px;
+  border: black 1px solid;
+  margin-top: 33px;
+  margin-left: 46px;
+  background-color: white;
+  position: relative;
+}
+
+.current_color {
+  position: absolute;
+  width: 110px;
+  height: 90px;
+  border: black 1px solid;
+  top: -20px;
+  right: 21px;
+  background-color: black;
+}
+
+.background:hover {
+  cursor: pointer;
+}
+
+.shadow_color:hover {
+  cursor: pointer;
+}
+
+.current_color:hover {
+  cursor: pointer;
+}
+
+/* Hex color entry */
+
+.hex_wrap {
+  float: right;
+  font-size: 20px;
+  margin: 5px;
+  margin-top: 32px;
+  margin-left: 80px;
+
+}
+
+/* Color pallet */
+
+.color_palet_wrap {
+  float: right;
+  margin-top: 18px;
+  margin-right: 5px;
+}
+
+.color_box {
+  width: 60px;
+  height: 60px;
+  border: 1px solid;
+  float: left;
+  border-radius: 9px;
+  margin-left: 5px;
+  cursor: pointer;
+  box-shadow: 0 8px 6px -6px black;
+  }
+
+.red {background-color: red; border: red 1px solid; border-style: inset;}
+.blue {background-color: blue; border: blue 1px solid;}
+.green {background-color: green;border: green 1px solid;}
+.yellow {background-color: yellow; border: yellow 1px solid;}
+.orange {background-color: orange; border: orange 1px solid;}
+.purple {background-color: purple; border: purple 1px solid;}
+.lime {background-color: lime; border: lime 1px solid;}
+.olive {background-color: olive; border: olive 1px solid;}
+.black {background-color: black; border: black 1px solid;}
+.grey {background-color: grey; border: grey 1px solid;}
+.white {background-color: white; border: white 1px solid;}
+.hex {
+  background-color: #2f821c;
+  font-size: 20px;
+  text-align: center;
+  border: black 1px solid;
+}
+
+
+/* Active color box or layer */
+
+.active_box {
+  border: grey 4px solid;
+  border-style: inset;
+}
+/* -------------------------------- */
+/* ----END of Color meniu------*/
+/* -------------------------------- */
+
+/* Media queries */
+
+@media screen and (max-width: 1405px) {
+  .color_box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid;
+    float: left;
+    border-radius: 9px;
+    margin-left: 5px;
+    cursor: pointer;
+    box-shadow: 0 8px 6px -6px black;
+    }
+    .color_palet_wrap {
+      float: right;
+      margin-top: 31px;
+      margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 1231px) {
+  .color_box {
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    float: left;
+    border-radius: 9px;
+    margin-left: 5px;
+    cursor: pointer;
+    box-shadow: 0 8px 6px -6px black;
+    font-size: 16px;
+    }
+    .color_palet_wrap {
+      float: right;
+      margin-top: 42px;
+      margin-right: 5px;
+    }
+}
